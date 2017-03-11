@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "First Blog Post"
-date: 2017-01-01
+date: March 11, 2017
 ---
 
 ## Well, here goes nothing
