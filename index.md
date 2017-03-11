@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Welcome!
+title: data science, and general nerdery
 tagline: Data Science, and general nerdery
 ---
 {% include JB/setup %}
