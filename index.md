@@ -5,16 +5,12 @@ tagline: Data Science, and general nerdery
 ---
 {% include JB/setup %}
 
-## Headline for Page
 
-## Sample Posts
+Welcome to my blog on Data Scicene and generally nerdery!
 
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
+This is a very early work in progress, so please excuse the mess.
 
-    $ rm -rf _posts/core-samples
-
-Here's a sample "posts list".
+Blog post list:
 
 <ul class="posts">
   {% for post in site.posts %}
