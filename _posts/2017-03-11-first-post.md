@@ -6,7 +6,7 @@ date: March 11, 2017
 
 ## The First Post...a work in progress
 
-This is my first blog post.  I will be expanding this post as I continue building out the site, adding new features, and testing it.  While it might not be best practice to draft and iterate on the public facing site, I am doing it anyway :)  Break stuff and fix it, right?
+This is my first blog post.  I will be expanding this post as I continue building out the site, adding new features, and testing it.  While it might not be best practice to draft and iterate on the public facing site, I am doing it anyway :)  Break stuff and fix it, right?  
 
 I'm using Github's free [Github Pages](https://pages.github.com) service to host this site, and I've installed [Jekyll](http://jekyllrb.com), which, among other things, lets me create a local web server so I can review my new posts and edits locally (from a branch of the master) before committing it to the live master branch.  Setting all this up took some research, but it's relatively straightforward if you have at lest some knowledge of Git, Github, CLI, and HTML.  
 
