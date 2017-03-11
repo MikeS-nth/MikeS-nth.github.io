@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Mike Sanders's Blog
+title: Welcome!
 tagline: Data Science, and general nerdery
 ---
 {% include JB/setup %}
