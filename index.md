@@ -1,7 +1,7 @@
 ---
 layout: page
-title: data science, and general nerdery
-tagline: Data Science, and general nerdery
+title: data science and general nerdery
+tagline: data science and general nerdery
 ---
 {% include JB/setup %}
 
