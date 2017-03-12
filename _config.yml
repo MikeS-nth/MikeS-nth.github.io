@@ -5,14 +5,14 @@ url: "https://mikes-nth.github.io" # the base hostname & protocol for your site
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: data science and general nerdery
+  title: Mike_S(n)
   avatar: avatar.png
   gravatar: # Email MD5 hash
   description: "Mike Sanders blog on data science" # used by search engines
 
   # Header and footer text
   header_text: >
-     <p><p style="font-size:48px">Welcome to Mike Sanders's blog exploring topics on data science.</p>
+     <p><p style="font-size:72px">data science and general nerdery.</p>
 
   header_text_feature_image:
   footer_text: >
