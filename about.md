@@ -5,8 +5,8 @@ permalink: /about/
 feature-img: "img/sample_feature_img_2.png"
 ---
 
-Type Theme is a free and open-source theme for [Jekyll](http://jekyllrb.com/), licensed under the MIT License.
+I'm Mike Sanders, and this is my blog.  I primarily write about data, data science, and technology, but I always allow room for general nerdery because it's fun.
 
-Head over to the [theme's documentation](https://rohanchandra.github.io/project/type/) for much more information about Type Theme or to install this theme on your own Jekyll site.
+Why "Mike_S(n)"?  There are a lot of us named Mike S.  Eventually, `for n in Mike_S` you'll find me. :smirk:
 
-This file is an example of a page in Jekyll, that automatically shows up in the header navigation, you can delete or modify this file freely.
+This entire site is a work in progress, and I promise there is more to come on this page and in the blog.  Stay tuned!
