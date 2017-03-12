@@ -12,7 +12,7 @@ I'm not interested in spending a lot of time in HTML, so being able to write eve
 
 Before I committed to this setup, however, I wanted to see how hard it would be to embed rich content in my posts from other sites.  For example, it's pretty useful to embed things like Tableau dashboards and other visualizations when you're blogging about data and data science.  
 
-After a deep trip down the Google rabbit hole, I found the simple answer that was staring me in the face:  Just copy the iframe code (which websites will generate for you when you click the "embed" button next to a video, etc.) and copy it straight into your Markdown file.  No special syntax needed. :astonished:
+After a deep trip down the Google rabbit hole, I found the simple answer that was staring me in the face:  Just copy the iframe code (which websites will generate for you when you click the "embed" button next to a video, etc.) and copy it straight into your Markdown file.  No special syntax needed. <facepalm>
 
 Here's a very simple Tableau dashboard I made using some data on US SAT scores:
 
