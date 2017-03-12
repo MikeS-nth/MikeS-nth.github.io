@@ -5,7 +5,11 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://localhost:4000/</link>
     <description></description>
+<<<<<<< HEAD
     <pubDate>Sun, 12 Mar 2017 13:31:41 -0400</pubDate>
+=======
+    <pubDate>Sun, 12 Mar 2017 13:30:32 -0400</pubDate>
+>>>>>>> devbranch
     
       <item>
         <title>First post: setting up the blog</title>
