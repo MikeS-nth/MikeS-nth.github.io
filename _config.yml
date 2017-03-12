@@ -72,5 +72,5 @@ sass:
   sass_dir: _sass
   style: :compressed
 gems:
-  - jemoji  
+  jemoji  
   [jekyll-paginate]
