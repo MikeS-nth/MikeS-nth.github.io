@@ -23,7 +23,7 @@ To do this in Python using pandas and scikit-learn:
 
     # The last argument `stratify` tells the function to stratify the target
     variable `y` so that the random sample is more representative of the full
-    sample when `y` has outliers.
+    sample when `y`.
 
 BUT--what do we do if your `y` is a continuous numerical variable, rather than a categorical variable?  Turns out that if we try the same syntax above, it throws an error.  This is because `train_test_split` doesn't know how to split up the sample unless you tell it what the "categories" are.
 
