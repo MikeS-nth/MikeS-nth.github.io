@@ -16,14 +16,11 @@ To do this in Python using pandas and scikit-learn:
     import pandas as pd
     from sklearn.model_selection import train_test_split
 
-    # Create training and testing samples from dataset df, with 30% allocated to the
-    testing sample (as is customary):
+    # Create training and testing samples from dataset df, with 30% allocated to the testing sample (as is customary):
 
     X_train, X_test, y_train, y_test = train_test_split(df, y, test_size=0.3, stratify=y)
 
-    # The last argument `stratify` tells the function to stratify the target
-    variable `y` so that the random sample is more representative of the full
-    sample when `y`.
+    # The last argument `stratify` tells the function to stratify the target variable `y` so that the random sample is more representative of the full sample when `y`.
 
 BUT--what do we do if your `y` is a continuous numerical variable, rather than a categorical variable?  Turns out that if we try the same syntax above, it throws an error.  This is because `train_test_split` doesn't know how to split up the sample unless you tell it what the "categories" are.
 
