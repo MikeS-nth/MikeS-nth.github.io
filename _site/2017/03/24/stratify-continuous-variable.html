@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Stratifying the Target Variable for Multi-Linear Regression | Mike_S(n)</title>
+	<meta name="description" content="Sometimes when creating a multi-linear regression model, it’s wise to stratify the y (target) variable when you split your training and testing data from the...">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-Frame-Options" content="sameorigin">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+	<!-- Canonical -->
+	<link rel="canonical" href="http://localhost:4000/2017/03/24/stratify-continuous-variable.html">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="Mike_S(n)" href="http://localhost:4000/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+	
+
+	<!-- KaTeX -->
+	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.3.0/katex.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.3.0/katex.min.js"></script>
+	
+
+	<!-- Google Analytics -->
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">Mike_S(n)</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/about/">
+					About
+				</a>
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/MikeS-nth" title="Follow on GitHub">
+		<i class="fa fa-fw fa-github"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+<li>
+	<a href="http://www.linkedin.com/in/michael-j-sanders/" title="Follow on LinkedIn">
+		<i class="fa fa-fw fa-linkedin"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/notaverb" title="Follow on Twitter">
+		<i class="fa fa-fw fa-twitter"></i>
+	</a>
+</li>
+
+
+
+
+
+
+		</ul>
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">Stratifying the Target Variable for Multi-Linear Regression</h1>
+    <p class="meta">
+    March 24, 2017
+    
+    </p>
+  </header>
+  <section class="post-content"><p>Sometimes when creating a multi-linear regression model, it’s wise to stratify the <code class="highlighter-rouge">y</code> (target) variable when you split your training and testing data from the total sample (train/test/split).  Why would we do this?  If you have <code class="highlighter-rouge">y</code> data that is not normally distributed, you may have a situation where your random samples of your sample might not be sufficiently representative of the sample.  Meta!</p>
+
+<p>In other words, you could have a situation where your training and/or testing sets (which are samples taken from your overall sample) look meaningfully different from the overall sample.  If that were the case, you run the risk of having a “garbage in, garbage out” situation, and your model may perform poorly.</p>
+
+<p>Stratifying is a common way to address this.  Essentially, stratifying is a way to ensure your ostensibly random sample is a representative sample.</p>
+
+<p>Usually, this comes into play for categorical variables.  In simple terms, the procedure is to sample in such a way that a representative selection from all categories are included in the training and testing sets.</p>
+
+<p>To do this in Python using pandas and scikit-learn:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>import numpy as np
+import pandas as pd
+from sklearn.model_selection import train_test_split
+
+# Create training and testing samples from dataset df, with 30% allocated to the testing sample (as is customary):
+
+X_train, X_test, y_train, y_test = train_test_split(df, y, test_size=0.3, stratify=y)
+
+# The last argument `stratify` tells the function to stratify the target variable `y` so that the random sample is more representative of the full sample when `y`.
+</code></pre>
+</div>
+
+<p>BUT–what do we do if your <code class="highlighter-rouge">y</code> is a continuous numerical variable, rather than a categorical variable?  Turns out that if we try the same syntax above, it throws an error.  This is because <code class="highlighter-rouge">train_test_split</code> doesn’t know how to split up the sample unless you tell it what the “categories” are.</p>
+
+<p>After a lot of time querying google, stackoverflow, and others more experienced than me, here’s a solution I found.  The method is to trick Python into interpreting your continuous numerical <code class="highlighter-rouge">y</code> variable as a categorical variable instead.  How?  By creating bins, and passing your <code class="highlighter-rouge">y</code> variable into an ndarray containing those bins and the corresponding values.</p>
+
+<p>In Python (with same libraries loaded as in the prior code snippet):</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code># Create the bins.  My `y` variable has 506 observations, and I want 50 bins.
+bins = np.linspace(0, 506, 50)
+# Save your Y values in a new ndarray, broken down by the bins created above.
+y_binned = np.digitize(y, bins)
+# Pass y_binned to the stratify argument, and sklearn will handle the rest
+X_train, X_test, y_train, y_test = train_test_split(df, y, test_size=0.3, stratify=y_binned)
+</code></pre>
+</div>
+
+<p>There you have it: stratification of a continuous numerical target value for multi-linear regression!</p>
+</section>
+</article>
+
+<!-- Post navigation -->
+
+
+<!-- Disqus -->
+
+
+<!-- Muut -->
+
+    </div>
+    
+<script src="/js/katex_init.js"></script>
+
+
+
+<footer class="site-footer">
+	<p class="text">Copyright 2017 Michael Sanders; all rights reserved.  Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
+</p>
+</footer>
+
+
+  </body>
+</html>
