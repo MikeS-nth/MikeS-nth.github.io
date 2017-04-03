@@ -31,10 +31,15 @@ After a lot of time querying google, stackoverflow, and others more experienced 
 In Python (with same libraries loaded as in the prior code snippet):
 
     # Create the bins.  My `y` variable has 506 observations, and I want 50 bins.
+    
     bins = np.linspace(0, 506, 50)
+
     # Save your Y values in a new ndarray, broken down by the bins created above.
+
     y_binned = np.digitize(y, bins)
+
     # Pass y_binned to the stratify argument, and sklearn will handle the rest
+
     X_train, X_test, y_train, y_test = train_test_split(df, y, test_size=0.3, stratify=y_binned)
 
 There you have it: stratification of a continuous numerical target value for multi-linear regression!
