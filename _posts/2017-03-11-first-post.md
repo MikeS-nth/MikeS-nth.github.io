@@ -23,16 +23,21 @@ Here's a very simple Tableau dashboard I made using some data on US SAT scores:
 
 To accomplish this, I simply pasted the following code in my Markdown file:
 
-    <iframe src="https://public.tableau.com/views/testhistogram/Sheet1?:embed=y&:display_count=yes"
- width="645" height="955"></iframe>
+```HTML
+<iframe src="https://public.tableau.com/views/testhistogram/Sheet1?:embed=y&:display_count=yes"
+width="645" height="955"></iframe>
+```
 
 Why not try the same with a YouTube video? (Couldn't help myself, given that I'm working on my blog...)
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZXsQAXx_ao0" frameborder="0" allowfullscreen></iframe>
 
 
 Here's the embed code:
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZXsQAXx_ao0" frameborder="0" allowfullscreen></iframe>
+```HTML
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZXsQAXx_ao0" frameborder="0" allowfullscreen></iframe>
+```
 
 Hope you enjoyed this.  More to come soon!
