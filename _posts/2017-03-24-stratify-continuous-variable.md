@@ -17,11 +17,16 @@ import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
-# Create training and testing samples from dataset df, with 30% allocated to the testing sample (as is customary):
+# Create training and testing samples from dataset df, with
+# 30% allocated to the testing sample (as
+# is customary):
 
 X_train, X_test, y_train, y_test = train_test_split(df, y, test_size=0.3, stratify=y)
 
-# The last argument `stratify` tells the function to stratify the target variable `y` so that the random sample is more representative of the full sample when `y`.
+# The last argument `stratify` tells the function to stratify
+# the target variable `y` so that the random
+# sample is more representative of the full
+#sample when `y`.
 ```
 
 BUT--what do we do if your `y` is a continuous numerical variable, rather than a categorical variable?  Turns out that if we try the same syntax above, it throws an error.  This is because `train_test_split` doesn't know how to split up the sample unless you tell it what the "categories" are.
@@ -30,16 +35,21 @@ After a lot of time querying google, stackoverflow, and others more experienced 
 
 In Python (with same libraries loaded as in the prior code snippet):
 
-    # Create the bins.  My `y` variable has 506 observations, and I want 50 bins.
-    
-    bins = np.linspace(0, 506, 50)
+```python
+# Create the bins.  My `y` variable has
+# 506 observations, and I want 50 bins.
 
-    # Save your Y values in a new ndarray, broken down by the bins created above.
+bins = np.linspace(0, 506, 50)
 
-    y_binned = np.digitize(y, bins)
+# Save your Y values in a new ndarray,
+# broken down by the bins created above.
 
-    # Pass y_binned to the stratify argument, and sklearn will handle the rest
+y_binned = np.digitize(y, bins)
 
-    X_train, X_test, y_train, y_test = train_test_split(df, y, test_size=0.3, stratify=y_binned)
+# Pass y_binned to the stratify argument,
+# and sklearn will handle the rest
+
+X_train, X_test, y_train, y_test = train_test_split(df, y, test_size=0.3, stratify=y_binned)
+```
 
 There you have it: stratification of a continuous numerical target value for multi-linear regression!
