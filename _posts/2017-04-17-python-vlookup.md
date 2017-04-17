@@ -26,13 +26,13 @@ employees = {
 ```
 Then, let's say I have a dataframe of keycard logs called `logs_df` that has a timestamp and EmployeeID, but no employee name.  It might look something like this:
 
-|Time      |EmployeeID    |
-|---------:|-------------:|
-|07:03:52  |98766         |
-|09:23:02  |29384         |
-|09:52:23  |98766         |
-|10:01:33  |12345         |
-|13:43:43  |29384         |
+|Time |EmployeeID |
+|:---|:---|
+|07:03:52  |98766 |
+|09:23:02  |29384 |
+|09:52:23  |98766 |
+|10:01:33  |12345 |
+|13:43:43  |29384 |
 
 Notice that I have *more rows than employee names*.  This is unsurprising for a keycard log, but it also means I am comparing different-shaped data.
 
@@ -45,13 +45,13 @@ logs_df['EmployeeName'] = logs_df.EmployeeID.map(employees)
 ```
 The output will look like this:
 
-|Time      |EmployeeID    |EmployeeName   |
-|---------:|-------------:|--------------:|
-|07:03:52  |98766         |Deanna         |
-|09:23:02  |29384         |Geordi         |
-|09:52:23  |98766         |Deanna         |
-|10:01:33  |12345         |Jean-Luc       |
-|13:43:43  |29384         |Geordi         |
+|Time |EmployeeID |EmployeeName|
+|:---|:---|:---|
+|07:03:52  |98766 |Deanna |
+|09:23:02  |29384 |Geordi |
+|09:52:23  |98766 |Deanna |
+|10:01:33  |12345 |Jean-Luc |
+|13:43:43  |29384 |Geordi
 
 
 ### Method 2: `.merge()` with a Left Join
@@ -59,11 +59,11 @@ What if your lookup values are in another dataframe, rather than a dictinoary?  
 
 Let's say my employee IDs were in a dataframe, called `employees_df` that looked like this:
 
-|EmployeeID    |EmployeeName   |
-|-------------:|--------------:|
-|98766         |Deanna         |
-|29384         |Geordi         |
-|12345         |Jean-Luc       |
+|EmployeeID |EmployeeName |
+|:---|:---|
+|98766 |Deanna |
+|29384 |Geordi |
+|12345 |Jean-Luc |
 
 In this case, I can populate `logs_df` with the employee names like this:
 
@@ -75,10 +75,10 @@ logs_df = pd.merge(logs_df, employees_df, how='left',
 ```
 And voila, we have our desired result:
 
-|Time      |EmployeeID    |EmployeeName   |
-|---------:|-------------:|--------------:|
-|07:03:52  |98766         |Deanna         |
-|09:23:02  |29384         |Geordi         |
-|09:52:23  |98766         |Deanna         |
-|10:01:33  |12345         |Jean-Luc       |
-|13:43:43  |29384         |Geordi         |
+|Time |EmployeeID |EmployeeName|
+|:---|:---|:---|
+|07:03:52  |98766 |Deanna |
+|09:23:02  |29384 |Geordi |
+|09:52:23  |98766 |Deanna |
+|10:01:33  |12345 |Jean-Luc |
+|13:43:43  |29384 |Geordi 
