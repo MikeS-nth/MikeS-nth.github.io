@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "First post: setting up the blog"
+feature-img: '../img/sample_feature_img_3.png'
 ---
 I wasn't sure what to write about for my first post, but setting up this site has been a fun learning experience--so I'll write about that.  Keep in mind this site and post are still works in progress.  While it might not be best practice to draft and iterate on the public facing site, I am doing it anyway :)  Break stuff and fix it, right?
 

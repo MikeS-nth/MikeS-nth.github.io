@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to Do a vLookup in Python"
-feature-img: '../img/sample_feature_img_2.png'
+feature-img: '../img/sample_feature_img_3.png'
 ---
 If you are one of the many people who, like me, are coming to Python for data analysis after having spent a lot of time working with Microsoft Excel, you will at some point find yourself saying, "How do I do a vLookup in Python?"  (Or, if you're really like me, you'll throw in a few expletives.)
 

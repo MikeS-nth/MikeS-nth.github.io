@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Stratifying the Target Variable for Multi-Linear Regression"
+feature-img: '../img/sample_feature_img_3.png'
 ---
 Sometimes when creating a multi-linear regression model, it's wise to stratify the `y` (target) variable when you split your training and testing data from the total sample (train/test/split).  Why would we do this?  If you have `y` data that is not normally distributed, you may have a situation where your random samples of your sample might not be sufficiently representative of the sample.  Meta!
 

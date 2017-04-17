@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Pandas pd.read_csv: Understanding na_filter"
+feature-img: '../img/sample_feature_img_3.png'
 ---
 
 The pandas library for Python is extremely useful for formatting data, conducting exploratory data analysis, and preparing data for use in modeling and machine learning.
