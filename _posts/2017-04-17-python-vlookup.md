@@ -11,9 +11,9 @@ What is vLookup?  For those of you who may be unfamiliar, vLookup is an Excel fo
 I will describe two methods to achieve the same result in Python, using the pandas library.  (I am sure there are other wasy to do it, but I find that these are good starting points.)
 
 ### Method 1:  `.map()` with a Dictionary
-In this method, you can use the `.map()` method in pandas to fill a dataframe column based on matched values.
+In this method, you can use the `.map()` method in pandas to fill a dataframe column based on matched values in a Python dictionary.
 
-Sticking with the exmaple above:
+Sticking with the example above:
 
 ```python
 # First, create a dictionary with employee IDs and names
@@ -81,4 +81,4 @@ And voila, we have our desired result:
 |09:23:02  |29384 |Geordi |
 |09:52:23  |98766 |Deanna |
 |10:01:33  |12345 |Jean-Luc |
-|13:43:43  |29384 |Geordi 
+|13:43:43  |29384 |Geordi
