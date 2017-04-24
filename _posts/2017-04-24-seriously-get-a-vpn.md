@@ -10,12 +10,12 @@ Let me skip to the point:  you should use a VPN.  It's just a good idea with alm
 A quick aside:  Please understand that I am **NOT** saying that a VPN = security, full stop.  Protecting your electronic security and privacy is multi-faceted, and there is no silver bullet.  If you're interested in a good primer, I highly recommend the Electronic Frontier Foundation's [Surveillance Self Defense](https://ssd.eff.org) site as a good introduction and basic how-to.
 
 Back to VPNs...why are they useful?  Specifically, a VPN encrypts your internet traffic between your computer (or phone or tablet) and the VPN exit point.  This has two major benefits:
-1. Makes it impossible (or at least extremely difficult) for a "bad guy" to steal, snoop, or otherwise mess with you on public wifi.  (Be extremely cautious on any public wifi, anyway.)
+1. Makes it very difficult for a "bad guy" to steal, snoop, or otherwise mess with you on public wifi.  (Be extremely cautious on any public wifi, anyway.)
 2. Prevents the internet service provider (or whomever controls that public wifi router) from seeing what websites you visit.
 
 There are many paid VPN services out there that make it pretty easy to set up a VPN by downloading their app and paying a modest subscription.  The most often-cited downside is that these companies can see all your browsing data (even if your ISP can't), and it is possible that they may turn around and sell it.  Also, some popular websites block traffic from known VPN providers, which forces you to disconnect from the VPN and lose all its benefits.  (Would you drop your shields in the Neutral Zone?  I wouldn't.)
 
-If you have the technical knowledge (or willingness to learn it), I suggest setting up your own VPN on a server you control.  This used to be somewhat difficult, but it's become relatively easy, thanks to a cyber security company called Trail of Bits, who released a free VPN setup tool called [Algo](https://blog.trailofbits.com/2016/12/12/meet-algo-the-vpn-that-works/).  (Not to be confused with algo as in algorithms.  Theirs is named in honor of Al Gore, who invented the internet.)
+If you have the technical knowledge (or willingness to learn it), I suggest setting up your own VPN on a server you control.  This used to be somewhat difficult, but it's become relatively easy, thanks to a cyber security company called [Trail of Bits](https://www.trailofbits.com), who released a free VPN setup tool called [Algo](https://blog.trailofbits.com/2016/12/12/meet-algo-the-vpn-that-works/).  (Not to be confused with algo as in algorithms.  Theirs is named in honor of Al Gore, who invented the internet.)
 
 For my fellow data scientists, enthusiasts, and technical professionals, I would gently suggest that you *should* go the DIY route, because you can do it with your existing command line and cloud computing skills.  (And by that I mean, the very basics of command line and setting up a cloud instance.)
 
