@@ -8,11 +8,11 @@ theme_settings:
   title: Mike_S(n)
   avatar: avatar.png
   gravatar: # Email MD5 hash
-  description: "Mike Sanders's blog on data science" # used by search engines
+  description: "Mike Sanders's personal website" # used by search engines
 
   # Header and footer text
   header_text: >
-     <p><p style="font-size:58px">data science and general nerdery.</p>
+     <p><p style="font-size:58px">michael j. sanders</p>
 
   header_text_feature_image:
   footer_text: >
