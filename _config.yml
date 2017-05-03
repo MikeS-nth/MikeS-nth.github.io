@@ -12,7 +12,7 @@ theme_settings:
 
   # Header and footer text
   header_text: >
-     <p><p style="font-size:58px">michael j. sanders</p>
+     <p><p style="font-size:58px">michael j. sanders"</p>
 
   header_text_feature_image:
   footer_text: >
