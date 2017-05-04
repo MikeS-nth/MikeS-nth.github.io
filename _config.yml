@@ -5,14 +5,14 @@ url: "https://mikes-nth.github.io" # the base hostname & protocol for your site
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: Mike_S(n)
+  title: Michael J. Sanders
   avatar: avatar.png
   gravatar: # Email MD5 hash
   description: "Mike Sanders's personal website" # used by search engines
 
   # Header and footer text
   header_text: >
-     <p><p style="font-size:58px">michael j. sanders</p>
+     <p><p style="font-size:58px">Mike_S(n)</p>
 
   header_text_feature_image:
   footer_text: >
