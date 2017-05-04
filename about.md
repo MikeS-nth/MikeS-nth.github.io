@@ -10,5 +10,5 @@ I'm a data science guy based in Washington, D.C.  I'm a lifelong technology love
 
 This site houses my personal blog, with a portfolio section in the works (stay tuned!). I primarily write about data, data science, and technology, but I always allow room for general nerdery because it's fun.
 
-### What Does "Mike_S(nth)"" Mean?
+### What Does "Mike_S(n)"" Mean?
 The short version is, there are a lot of us in this world named Mike S.  But even in that long (and noble?) list, eventually `for n in Mike_S` you'll find me. ;)
