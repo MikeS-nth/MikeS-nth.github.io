@@ -7,13 +7,13 @@ I wasn't sure what to write about for my first post, but setting up this site ha
 
 I'm using Github's free [Github Pages](https://pages.github.com) service to host this site, and I've installed [Jekyll](http://jekyllrb.com), which, among other things, lets me create a local web server so I can review my new posts and edits locally (from a branch of the master) before committing it to the live master branch.  Setting all this up took some research, but it's relatively straightforward if you have at lest some knowledge of Git, Github, CLI, and HTML.
 
-Github Pages lets you use HTML of course, but because the service relies on Jekyll, you can also write your pages and blog posts in Markdown and the service will essentially convert it to HTML.  Markdown is great for making relatively presentable/formatted text content quickly and easily.  
+Github Pages lets you use HTML of course, but because the service relies on Jekyll, you can also write your pages and blog posts in Markdown and the service will generate the HTML pages for you.  Markdown is great for making relatively presentable/formatted text content quickly and easily.  
 
-I'm not interested in spending a lot of time in HTML, so being able to write everything in Markdown is appealing.  In truth, so far I've spent a lot more time messing around with style sheets than I would have liked. But hopefully this only required for the setup stage, and soon I can stick to Markdown.
+I'm not interested in spending a lot of time in HTML, so being able to write everything in Markdown is appealing.  In truth, so far I've spent a lot more time messing around with style sheets than I would have liked. But hopefully this is only required for the setup stage, and soon I can stick to Markdown.
 
 Before I committed to this setup, however, I wanted to see how hard it would be to embed rich content in my posts from other sites.  For example, it's pretty useful to embed things like Tableau dashboards and other visualizations when you're blogging about data and data science.  
 
-After a deep trip down the Google rabbit hole, I found the simple answer that was staring me in the face:  Just copy the iframe code (which websites will generate for you when you click the "embed" button next to a video, etc.) and copy it straight into your Markdown file.  No special syntax needed. <facepalm>
+Here, Markdown shines again:  Just copy the iframe code (which websites will generate for you when you click the "embed" button next to a video, etc.) and copy it straight into your Markdown file.  No special syntax needed. <facepalm>
 
 Here's a very simple Tableau dashboard I made using some data on US SAT scores:
 
