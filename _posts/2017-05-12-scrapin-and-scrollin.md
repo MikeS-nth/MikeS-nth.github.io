@@ -52,7 +52,7 @@ Then I learned something interesting: if the site is built with javascript (as s
 
 If I could find the JSON, maybe I can access the data directly.  And in fact I did find it.  On the Network tab of Chrome's site inspection tool (be sure to reload the page), I found this:
 
-![jsons](https://michaeljsanders.com/img/site-inspect.jpg)
+![jsons](https://michaeljsanders.com/img/site_inspect.jpg)
 
 See all of those items under Name labeled [year].json?  Each of those turned out to be a full year's worth of data in one file, no scrolling required.  
 
