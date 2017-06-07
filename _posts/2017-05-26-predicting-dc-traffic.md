@@ -83,4 +83,4 @@ Another side note:  I had hoped to be able to predict the *amount* of traffic de
 
 I consider this to be a living project and plan to continue developing and refining it.  In particular, I plan to continue gathering data to build a larger, more significant dataset to model against.  I'll use this data to retrain the current models, as well as explore whether the additional data allows for greater results using different methods (maybe even regression will work).
 
-If you're interested in seeing the code and more graphs, please check out the [jupyter notebook]((https://michaeljsanders.com/img/routes_smaller.jpg)!
+If you're interested in seeing the code and more graphs, please check out the [jupyter notebook](https://github.com/MikeS-nth/portfolio/blob/master/DC_Traffic_Prediction/Predicting_DC_Traffic_Mike_Sanders.ipynb)!
