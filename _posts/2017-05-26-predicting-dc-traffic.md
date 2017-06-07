@@ -68,12 +68,12 @@ Using classification algorithms, the events data seems to provide a reasonably r
 
 |Prediction |Precision Score |Interpretation|
 |:---|:--:|:---|
-|Tomorrow's traffic will be ABOVE the median  |.67 | 67% chance the prediction is correct |
-|Tomorrow's traffic will be BELOW the median |.83 | 83% chance the prediction is correct  |
-|Tomorrow's traffic will be VERY BAD  |.86 |86% chance the prediction is correct |
-|Tomorrow's traffic will NOT be VERY BAD  |.50 |50% chance the prediction is correct |
-|Tomorrow's traffic will be relatively LESS BAD    |.88 |88% chance the prediction is correct |
-|Tomorrow's traffic will NOT be relatively LESS BAD  |1.0 |100% chance the prediction is correct*
+|Tomorrow's traffic will be ABOVE the median  |.67 | 67% of the predictions were correct |
+|Tomorrow's traffic will be BELOW the median |.83 | 83% of the predictions were correct  |
+|Tomorrow's traffic will be VERY BAD  |.86 |86% of the predictions were correct |
+|Tomorrow's traffic will NOT be VERY BAD  |.50 |50% of the predictions were correct |
+|Tomorrow's traffic will be relatively LESS BAD    |.88 |88% of the predictions were correct |
+|Tomorrow's traffic will NOT be relatively LESS BAD  |1.0 |100% of the predictions were correct*
 
 * *Obviously 100% is unlikely, and it is probably due to the small sample size.  However, what matters is that the model is tuned to be "suspicious" that the traffic will be less bad.  A bad prediction on this category could mean someone (like me) doesn't leave the house early enough and arrives late.*
 
