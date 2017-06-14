@@ -5,7 +5,7 @@ feature-img: '../img/sample_feature_img_3.png'
 ---
 I recently completed a proof-of-concept project to see if it would be possible to predict traffic congestion in Washington, D.C. (where I live) based on political / governmental activity and overall volume of significant events.
 
-I am pleased to say the results are encouraging, and the models I built perform reasonably well at predicting high-level classes of traffic congestion.  This post includes an overview of the project, and the jupyter notebook with code is available [here](https://github.com/MikeS-nth/portfolio/blob/master/DC_Traffic_Prediction/Predicting_DC_Traffic_Mike_Sanders.ipynb):  
+I am pleased to say the results are encouraging, and the models I built perform reasonably well at predicting high-level classes of traffic congestion.  This post includes an overview of the project, and the jupyter notebook with code is available [here](https://github.com/MikeS-nth/portfolio/blob/master/DC_Traffic_Prediction/Predicting_DC_Traffic_Mike_Sanders.ipynb).  
 
 ## Project Overview
 Traffic in the District of Columbia is bad; that much is a given.  But what if you could know ahead of time just *how* bad it was going to be--*tomorrow*?
