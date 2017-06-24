@@ -28,14 +28,14 @@ There are a lot of resources out there for setting up an Algo VPN:
 
 Setting up Algo:
 
-- Algo Github site with downloads and installation instructions: https://github.com/trailofbits/algo
-- Lifehacker.com how-to guide (this replicates a lot of the Algo instructions, but I found it easier to use): http://lifehacker.com/how-to-set-up-your-own-completely-free-vpn-in-the-cloud-1794302432
+- [Algo Github site with downloads and installation instructions](https://github.com/trailofbits/algo)
+- [Lifehacker.com how-to guide (this replicates a lot of the Algo instructions, but I found it easier to use)](http://lifehacker.com/how-to-set-up-your-own-completely-free-vpn-in-the-cloud-1794302432)
 
 Cloud providers:
-- Amazon Web Services: https://aws.amazon.com
-- DigitalOcean: https://www.digitalocean.com
-- Google Compute Engine: https://cloud.google.com/compute/
-- Microsoft Azure: https://azure.microsoft.com/en-us/
+- [Amazon Web Services](https://aws.amazon.com)
+- [DigitalOcean](https://www.digitalocean.com)
+- [Google Compute Engine](https://cloud.google.com/compute/)
+- [Microsoft Azure](https://azure.microsoft.com/en-us/)
 
 Security and Privacy in General:
-- EFF Surveillance Self Defense: https://ssd.eff.org
+- [EFF Surveillance Self Defense](https://ssd.eff.org)
