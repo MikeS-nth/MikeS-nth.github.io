@@ -29,7 +29,7 @@ There are a lot of resources out there for setting up an Algo VPN:
 Setting up Algo:
 
 - [Algo Github site with downloads and installation instructions](https://github.com/trailofbits/algo)
-- [Lifehacker.com how-to guide (this replicates a lot of the Algo instructions, but I found it easier to use)](http://lifehacker.com/how-to-set-up-your-own-completely-free-vpn-in-the-cloud-1794302432)
+- [Lifehacker.com how-to guide](http://lifehacker.com/how-to-set-up-your-own-completely-free-vpn-in-the-cloud-1794302432) (this replicates a lot of the Algo instructions, but I found it easier to use)
 
 Cloud providers:
 - [Amazon Web Services](https://aws.amazon.com)
